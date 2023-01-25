@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>Вы уверены что хотите это удалить "{{ item }}"?</p>
+    <a href="{% url 'list' %}">Cansel</a>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="submit" name="Confirm">
+    </form>
+</body>
+</html>
